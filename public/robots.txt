@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /obrigado
+
+Sitemap: https://nexora.netlify.app/sitemap.xml
