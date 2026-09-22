@@ -40,7 +40,7 @@ export default function ContactSection() {
             <input
               type="text" required maxLength={100}
               value={form.name} onChange={e => setForm(p => ({ ...p, name: e.target.value }))}
-              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-violet-500 transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-white/[0.08] text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500 transition-colors"
               placeholder="Seu nome"
             />
           </div>
@@ -49,7 +49,7 @@ export default function ContactSection() {
             <input
               type="email" required maxLength={254}
               value={form.email} onChange={e => setForm(p => ({ ...p, email: e.target.value }))}
-              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-violet-500 transition-colors"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-white/[0.08] text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500 transition-colors"
               placeholder="seu@email.com"
             />
           </div>
@@ -58,12 +58,12 @@ export default function ContactSection() {
             <textarea
               required maxLength={2000} rows={5}
               value={form.message} onChange={e => setForm(p => ({ ...p, message: e.target.value }))}
-              className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-violet-500 transition-colors resize-none"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-white/[0.08] text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500 transition-colors resize-none"
               placeholder="Como podemos ajudar?"
             />
           </div>
           <button type="submit" disabled={status === 'sending'}
-            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-violet-600 to-blue-500 text-white font-semibold hover:opacity-90 transition-opacity disabled:opacity-50">
+            className="w-full py-3.5 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition-colors disabled:opacity-50">
             {status === 'sending' ? 'Enviando...' : 'Enviar formulário'}
           </button>
           {status === 'ok' && <p className="text-green-400 text-sm text-center">Mensagem enviada! Em breve entraremos em contato.</p>}

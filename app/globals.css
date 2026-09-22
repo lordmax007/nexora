@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --background: #0B0718;
+  --background: #0D1117;
 }
 
 * {
@@ -37,6 +37,6 @@ body {
   background: #0B0718;
 }
 ::-webkit-scrollbar-thumb {
-  background: #7C3AED;
+  background: #4F46E5;
   border-radius: 3px;
 }

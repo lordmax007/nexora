@@ -8,16 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#0B0718',
-        surface: '#150D2B',
-        card: '#1C1135',
+        background: '#0D1117',
+        surface: '#161B27',
+        card: '#1E2433',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-glow': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(124,58,237,0.3), transparent)',
+        'hero-glow': 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(79,70,229,0.12), transparent)',
       },
     },
   },

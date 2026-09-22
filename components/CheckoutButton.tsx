@@ -31,7 +31,7 @@ export default function CheckoutButton({ slug, price, title }: Props) {
     <button
       onClick={handleBuy}
       disabled={loading}
-      className="w-full py-4 rounded-2xl bg-gradient-to-r from-violet-600 to-blue-500 text-white font-semibold text-lg hover:opacity-90 transition-all disabled:opacity-50 shadow-lg shadow-violet-900/50"
+      className="w-full py-4 rounded-lg bg-indigo-600 text-white font-semibold text-lg hover:bg-indigo-500 transition-colors disabled:opacity-50"
     >
       {loading ? 'Redirecionando...' : `Comprar por R$ ${price.toFixed(2).replace('.', ',')}`}
     </button>
